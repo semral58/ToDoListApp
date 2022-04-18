@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    background: url(https://images.pexels.com/photos/139366/pexels-photo-139366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Todo-List-Container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #c4c4c4;
+    width: 365px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.header-yellow {
+    background: linear-gradient(90deg, orange, yellow);
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header-yellow:hover {
+    background: linear-gradient(90deg, yellow, orange);
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title:hover {
+    color: #9953F1;
+    transform: scale(1.1);
+}
+
+.sort-icon {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+    text-align: end;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.todo-list-parent {
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline-start: 0;
+}
+
+.li-lists {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.todo-list-input {
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+
+.list-X-icon {
+    border-radius: 10px;
+    transition: ease 0.3s;
+}
+
+.list-X-icon:hover {
+    background-color: #9953F1;
+}
+
+.div-button {
+    background-color: #833AE0;
+    margin: auto;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border: 20px;
+    border-radius: 50px;
+    margin-top: 23px;
+    margin-bottom: 21px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.div-button:hover {
+    background: linear-gradient(90deg, rgb(248, 67, 67), rgb(67, 67, 253));
+    width: 50%;
+    box-shadow: 0 0 0 4px rgb(255, 255, 113);
+    transition: 0.6s;
+}
+
+.plus-button {
+    background-color: #9953F1;
+    width: 5%;
+    padding: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 80px;
+    color: white;
+}
+
+.add-button {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: auto;
+}
+
+@media(max-width:245px) {
+    .container {
+        min-width: 300px;
+    }
+}
